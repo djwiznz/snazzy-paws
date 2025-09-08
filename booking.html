@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snazzy Paws Grooming — Booking</title>
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="site-nav" aria-label="Main">
+        <a class="brand" href="index.html"><span aria-hidden="true">🐾</span> Snazzy Paws Grooming</a>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a aria-current="page" href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Request a booking</h1>
+    <p>Fill in your details and we will confirm times with you. Fields marked <span class="req">*</span> are required.
+    </p>
+
+    <form class="form" aria-describedby="booking-help" action="#" method="post" novalidate>
+      <p id="booking-help" class="help">Forms are not connected. This is a demo submission.</p>
+
+      <div class="form-row">
+        <label for="owner">Owner’s name <span class="req">*</span></label>
+        <input id="owner" name="owner" type="text" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email address <span class="req">*</span></label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="dogname">Dog’s name <span class="req">*</span></label>
+        <input id="dogname" name="dogname" type="text" required>
+      </div>
+
+      <div class="form-row">
+        <label for="breed">Breed <span class="req">*</span></label>
+        <input id="breed" name="breed" type="text" required>
+      </div>
+
+      <div class="form-row">
+        <label for="age">Age (years) <span class="req">*</span></label>
+        <input id="age" name="age" type="number" min="0" step="1" required>
+      </div>
+
+      <button class="btn" type="submit">Submit request</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Opening hours:</strong> Mon–Sat, 9:00 am – 5:00 pm</p>
+      <p>&copy; 2025 Snazzy Paws Grooming</p>
+    </div>
+  </footer>
+</body>
+
+</html>

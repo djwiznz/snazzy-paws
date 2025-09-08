@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snazzy Paws Grooming — Contact</title>
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="site-nav" aria-label="Main">
+        <a class="brand" href="index.html"><span aria-hidden="true">🐾</span> Snazzy Paws Grooming</a>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Find us and get in touch</h1>
+
+    <section class="map-wrap" aria-label="Map">
+      <!-- Can insert real location here -->
+      <iframe title="Map to Snazzy Paws Grooming" src="https://www.google.com/maps/embed?pb=" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section>
+      <h2>Send a message</h2>
+      <form class="form" aria-describedby="contact-help" action="#" method="post" novalidate>
+        <p id="contact-help" class="help">Forms are not connected. This is a demo submission.</p>
+
+        <div class="form-row">
+          <label for="name">Name <span class="req">*</span></label>
+          <input id="name" name="name" type="text" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email <span class="req">*</span></label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone <span class="req">*</span></label>
+          <input id="phone" name="phone" type="tel" required>
+        </div>
+
+        <div class="form-row">
+          <label for="comment">Comment <span class="req">*</span></label>
+          <textarea id="comment" name="comment" rows="5" required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Opening hours:</strong> Mon–Sat, 9:00 am – 5:00 pm</p>
+      <p>&copy; 2025 Snazzy Paws Grooming</p>
+    </div>
+  </footer>
+</body>
+
+</html>
