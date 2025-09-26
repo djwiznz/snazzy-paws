@@ -1,0 +1,5 @@
+# A3: protect /staff with Apache Basic Auth (password file kept outside web root)
+AuthType Basic
+AuthName "Staff Only"
+AuthUserFile "C:/xampp/secure/.htpasswd"
+Require valid-user

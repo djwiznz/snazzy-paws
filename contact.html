@@ -4,7 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- A3: one-sentence summary for this page (helps SEO) -->
+  <meta name="description" content="Find our location and contact details. Get in touch.">
   <title>Snazzy Paws Grooming — Contact</title>
+  <!-- A3: load W3.CSS framework; our stylesheet still controls the look -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
@@ -25,14 +29,15 @@
       </nav>
     </div>
   </header>
-
-  <main id="main" class="container">
-    <h1>Find us and get in touch</h1>
+  
+  <!-- A3: prove framework use without changing design -->
+  <main id="main" class="container w3-container">
+        <h1>Find us and get in touch</h1>
 
     <section class="map-wrap" aria-label="Map">
-      <!-- Can insert real location here -->
-      <iframe title="Map to Snazzy Paws Grooming" src="https://www.google.com/maps/embed?pb=" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- A3: embedded Google Map for our real location -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907046.576813253!2d152.3093462481386!3d-27.371008896632482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2snz!4v1758920874146!5m2!1sen!2snz" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <section>
@@ -68,7 +73,8 @@
   <footer class="site-footer">
     <div class="container">
       <p><strong>Opening hours:</strong> Mon–Sat, 9:00 am – 5:00 pm</p>
-      <p>&copy; 2025 Snazzy Paws Grooming</p>
+      <!-- A3: link to new privacy page -->
+      <p>&copy; 2025 Snazzy Paws Grooming • <a href="privacy.html">Privacy</a></p>
     </div>
   </footer>
 </body>
