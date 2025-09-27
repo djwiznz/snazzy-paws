@@ -6,7 +6,7 @@
   <meta name="description" content="Staff roster for internal use.">
   <title>Snazzy Paws Grooming — Staff Roster</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="../css/styles.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <!-- A3: this page is protected by Apache Basic Auth via /staff/.htaccess -->
@@ -36,5 +36,15 @@
       </table>
     </div>
   </main>
+<script>
+  /* A3: simple mobile menu toggle */
+  function spToggleMenu(btn) {
+    var m = document.getElementById('mainMenu');
+    if (!m) return;
+    var open = m.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
 </body>
+
 </html>

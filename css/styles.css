@@ -1,3 +1,9 @@
+/* A3 update (Task 1 Part 1a)
+   - Framework: W3.CSS included in HTML
+   - This file keeps the original design from A2
+   - Contact page includes a Google Map embed
+   - Staff roster is protected via Apache on /staff
+*/
 :root {
   /* Colors */
   --bg: #ffffff;
@@ -436,5 +442,38 @@ textarea:required:focus:invalid {
   * {
     animation: none !important;
     transition: none !important
+  }
+}
+
+/* A3: mobile hamburger menu (keeps existing design) */
+.menu-toggle { display: none; }
+
+@media (max-width: 768px) {
+  /* Keep header tidy on small screens */
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  /* Hide the desktop menu; show when toggled */
+  .site-nav .menu {
+    display: none;
+    flex-direction: column; /* stacked links when open */
+    gap: 0;                 /* match your current spacing */
+    margin: 0; padding: 0;
+  }
+  .site-nav .menu.open { display: block; }
+
+  /* Show the burger button */
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 0;
+    font: inherit;
+    padding: .5rem .75rem;
+    cursor: pointer;
   }
 }

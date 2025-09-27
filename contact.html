@@ -9,7 +9,7 @@
   <title>Snazzy Paws Grooming — Contact</title>
   <!-- A3: load W3.CSS framework; our stylesheet still controls the look -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -19,7 +19,14 @@
     <div class="container">
       <nav class="site-nav" aria-label="Main">
         <a class="brand" href="index.html"><span aria-hidden="true">🐾</span> Snazzy Paws Grooming</a>
-        <ul class="menu">
+
+        <!-- A3: mobile hamburger toggle (shown only on small screens) -->
+        <button class="menu-toggle" aria-label="Toggle menu" aria-controls="mainMenu" aria-expanded="false" onclick="spToggleMenu(this)">
+          ☰ Menu
+        </button>
+
+        <!-- A3: give the menu an id so we can toggle it -->
+        <ul class="menu" id="mainMenu">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -36,7 +43,7 @@
 
     <section class="map-wrap" aria-label="Map">
       <!-- A3: embedded Google Map for our real location -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907046.576813253!2d152.3093462481386!3d-27.371008896632482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2snz!4v1758920874146!5m2!1sen!2snz" 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59996.89150095253!2d175.23659412954513!3d-37.785394939380055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d22142050ed0b%3A0x862cf49d62d3f56d!2sMetro%20Paws!5e0!3m2!1sen!2snz!4v1758939108396!5m2!1sen!2snz" 
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
@@ -77,6 +84,15 @@
       <p>&copy; 2025 Snazzy Paws Grooming • <a href="privacy.html">Privacy</a></p>
     </div>
   </footer>
+<script>
+  /* A3: simple mobile menu toggle */
+  function spToggleMenu(btn) {
+    var m = document.getElementById('mainMenu');
+    if (!m) return;
+    var open = m.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
 </body>
 
 </html>
