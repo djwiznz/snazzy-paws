@@ -11,13 +11,64 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- Header and navigation (same as other pages) -->
+<header class="site-header">
+  <div class="container">
+    <nav class="site-nav" aria-label="Main">
+      <a class="brand" href="index.html"><span aria-hidden="true">🐾</span> Snazzy Paws Grooming</a>
+
+      <!-- A3: mobile hamburger toggle -->
+      <button class="menu-toggle" aria-label="Toggle menu" aria-controls="mainMenu" aria-expanded="false" onclick="spToggleMenu(this)">
+        ☰ Menu
+      </button>
+
+      <!-- A3: give the menu an id so we can toggle it -->
+      <ul class="menu" id="mainMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a aria-current="page" href="privacy.html">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
   <!-- A3: prove framework use without changing design -->
   <main id="main" class="container w3-container">
     <h1>Privacy policy</h1>
-    <p>We collect details you share when you make a booking or contact us, like name, phone, email, and basic information about your dog. We use this to confirm bookings, provide service, and follow up if needed.</p>
-    <p>We store information safely and aim to keep it only as long as required for bookings and records. You can ask us to update or remove your details by contacting us.</p>
-    <p>We do not sell customer data. If we use third-party tools for hosting or analytics, we choose reputable providers and basic, privacy-friendly settings.</p>
-    <p>Contact: hello@snazzypaws.example</p>
+
+    <h3>What we collect</h3>
+<ul>
+  <li>Contact details you share (name, email, phone).</li>
+  <li>Booking details about your dog (name, breed, notes).</li>
+</ul>
+<h3>Why we collect it</h3>
+<p>We use this to confirm bookings, provide grooming services, and follow up if needed.</p>
+
+<h3>How long we keep it</h3>
+<p>We keep booking records only as long as needed for appointments and basic business records.</p>
+
+<h3>Sharing</h3>
+<p>We don’t sell personal data. We may use trusted providers to host this site and email; they process data only so we can run the service.</p>
+
+<h3>New Zealand privacy principles</h3>
+<p>We handle personal information in line with New Zealand’s Privacy Act 2020 and the 13 privacy principles set by the Office of the Privacy Commissioner. In short, we collect only what we need, tell you why, keep it safe, keep it only as long as we need it, let you see and correct it, and don’t share it without your okay or a lawful reason.</p>
+<p>Read the principles here: <a href="https://www.privacy.org.nz/privacy-principles/" target="_blank" rel="noopener">privacy.org.nz/privacy-principles</a>.</p>
+
+<h3>Where information is stored</h3>
+<p>We run a simple website. Any booking or contact details you send us are stored in our email or booking records. Some services we use may host data outside New Zealand (for example, our website host or Google Maps). We take reasonable steps to use reputable providers and settings that offer comparable safeguards.</p>
+
+<h3>Contact and complaints</h3>
+<p>If you have a privacy question, contact us at <a href="mailto:hello@snazzypaws.example">hello@snazzypaws.example</a>. You can also contact the Office of the Privacy Commissioner: <a href="https://www.privacy.org.nz" target="_blank" rel="noopener">privacy.org.nz</a>.</p>
+
+<h3>Cookies and third-party content</h3>
+<p>Pages with an embedded Google Map may set cookies from Google. We don’t run ads or tracking pixels.</p>
+
+<h3>Your choices</h3>
+<p>You can ask us to update or remove your details. Contact: <a href="mailto:hello@snazzypaws.example">hello@snazzypaws.example</a></p>
+
+<p><small>Last updated: 27 Sep 2025</small></p>
   </main>
 
   <!-- Footer -->
