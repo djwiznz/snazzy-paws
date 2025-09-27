@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- A3: one-sentence summary for this page (helps SEO) -->
-  <meta name="description" content="Snazzy Paws Grooming: friendly, professional dog grooming in Hamilton. Book online.">
+  <meta name="description"
+    content="Snazzy Paws Grooming: friendly, professional dog grooming in Hamilton. Book online.">
   <title>Snazzy Paws Grooming — Home</title>
   <!-- A3: load W3.CSS framework; our stylesheet still controls the look -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -21,7 +22,8 @@
         <a class="brand" href="index.html"><span aria-hidden="true">🐾</span> Snazzy Paws Grooming</a>
 
         <!-- A3: mobile hamburger toggle (shown only on small screens) -->
-        <button class="menu-toggle" aria-label="Toggle menu" aria-controls="mainMenu" aria-expanded="false" onclick="spToggleMenu(this)">
+        <button class="menu-toggle" aria-label="Toggle menu" aria-controls="mainMenu" aria-expanded="false"
+          onclick="spToggleMenu(this)">
           ☰ Menu
         </button>
 
@@ -40,7 +42,7 @@
 
   <!-- A3: prove framework use without changing design -->
   <main id="main" class="w3-container">
-       <section class="hero">
+    <section class="hero">
       <div class="container hero-trio">
         <img class="hero-image" src="assets/images/hero1.jpg"
           alt="Smiling golden retriever with a blue bow after grooming" width="1200" height="900">
@@ -83,15 +85,15 @@
       <p>&copy; 2025 Snazzy Paws Grooming • <a href="privacy.html">Privacy</a></p>
     </div>
   </footer>
-<script>
-  /* A3: simple mobile menu toggle */
-  function spToggleMenu(btn) {
-    var m = document.getElementById('mainMenu');
-    if (!m) return;
-    var open = m.classList.toggle('open');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-  }
-</script>
+  <script>
+    /* A3: simple mobile menu toggle */
+    function spToggleMenu(btn) {
+      var m = document.getElementById('mainMenu');
+      if (!m) return;
+      var open = m.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+  </script>
 </body>
 
 </html>

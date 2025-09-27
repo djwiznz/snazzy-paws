@@ -446,9 +446,12 @@ textarea:required:focus:invalid {
 }
 
 /* A3: mobile hamburger menu (keeps existing design) */
-.menu-toggle { display: none; }
+.menu-toggle {
+  display: none;
+}
 
 @media (max-width: 768px) {
+
   /* Keep header tidy on small screens */
   .site-nav {
     display: flex;
@@ -459,11 +462,17 @@ textarea:required:focus:invalid {
   /* Hide the desktop menu; show when toggled */
   .site-nav .menu {
     display: none;
-    flex-direction: column; /* stacked links when open */
-    gap: 0;                 /* match your current spacing */
-    margin: 0; padding: 0;
+    flex-direction: column;
+    /* stacked links when open */
+    gap: 0;
+    /* match your current spacing */
+    margin: 0;
+    padding: 0;
   }
-  .site-nav .menu.open { display: block; }
+
+  .site-nav .menu.open {
+    display: block;
+  }
 
   /* Show the burger button */
   .menu-toggle {

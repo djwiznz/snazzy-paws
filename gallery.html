@@ -21,7 +21,8 @@
         <a class="brand" href="index.html"><span aria-hidden="true">🐾</span> Snazzy Paws Grooming</a>
 
         <!-- A3: mobile hamburger toggle (shown only on small screens) -->
-        <button class="menu-toggle" aria-label="Toggle menu" aria-controls="mainMenu" aria-expanded="false" onclick="spToggleMenu(this)">
+        <button class="menu-toggle" aria-label="Toggle menu" aria-controls="mainMenu" aria-expanded="false"
+          onclick="spToggleMenu(this)">
           ☰ Menu
         </button>
 
@@ -39,7 +40,7 @@
 
   <!-- A3: prove framework use without changing design -->
   <main id="main" class="container w3-container">
-        <h1>Our happy clients</h1>
+    <h1>Our happy clients</h1>
     <div class="gallery-grid">
       <img src="assets/images/gallery01.jpg" alt="Small dog with tidy trim" loading="lazy" width="600" height="450">
       <img src="assets/images/gallery02.jpg" alt="Happy dog with bandana" loading="lazy" width="600" height="450">
@@ -67,15 +68,15 @@
       <p>&copy; 2025 Snazzy Paws Grooming • <a href="privacy.html">Privacy</a></p>
     </div>
   </footer>
-<script>
-  /* A3: simple mobile menu toggle */
-  function spToggleMenu(btn) {
-    var m = document.getElementById('mainMenu');
-    if (!m) return;
-    var open = m.classList.toggle('open');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-  }
-</script>
+  <script>
+    /* A3: simple mobile menu toggle */
+    function spToggleMenu(btn) {
+      var m = document.getElementById('mainMenu');
+      if (!m) return;
+      var open = m.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+  </script>
 </body>
 
 </html>
